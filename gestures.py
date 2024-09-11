@@ -6,9 +6,11 @@ import time
 gestures_enabled = True
 
 def stop_gestures():
+    global gestures_enabled
     gestures_enabled = False
 
 def start_gestures(delay = 2):
+    global gestures_enabled
     gestures_enabled = True
 
     width, height = 1000, 800
@@ -52,12 +54,12 @@ def start_gestures(delay = 2):
                 button_pressed = True
 
             if fin == [0, 0, 0, 0, 1]: 
-                print("right")
+                print("left")
                 pyautogui.moveTo(current_mouse_x-10, current_mouse_y)
                 button_pressed = True
 
             if fin == [1, 0, 0, 0, 0]: 
-                print("left")
+                print("right")
                 pyautogui.moveTo(current_mouse_x+10, current_mouse_y)
                 button_pressed = True       
 
@@ -96,3 +98,4 @@ def start_gestures(delay = 2):
         if key == ord('q'): # press q to quit
             cv2.destroyAllWindows()
             break
+    cv2.destroyAllWindows()
