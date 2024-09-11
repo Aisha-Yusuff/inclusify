@@ -26,7 +26,7 @@ A technology's usefulness is directly proportional to how widely available it is
 
 1. **Clone the Repository**:
 
-git clone https://github.com/Aisha-Yusuff/inclusify
+git clone [https://github.com/Aisha-Yusuff/inclusify](https://github.com/Aisha-Yusuff/inclusify.git)
 
   
 ## Usage
