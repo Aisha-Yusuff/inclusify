@@ -43,4 +43,3 @@ def hand_gestures():
 # scroll down
 # Zoom in 
 # Zoom out
-hand_gestures()
