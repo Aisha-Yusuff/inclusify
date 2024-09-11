@@ -17,7 +17,7 @@ cam.set(4, height)
 # Hand Detector
 detector_hand = HandDetector(detectionCon=0.8, maxHands=1)
 # Variables
-delay = 1 # TODO: can this be a setting on the gui
+delay = 2 # TODO: can this be a setting on the gui
 button_pressed = False
 counter = 0
 
