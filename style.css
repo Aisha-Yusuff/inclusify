@@ -1,0 +1,80 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for video and canvas */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+/* Video Element */
+.input_video {
+    display: none; /* As per your original setup */
+}
+
+
+.output_canvas {
+    /* border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 20px; */
+    size: 10vh; 
+}
+
+
+
+/* width: 80vw;           
+    height: 50vh;          
+    float: left;           
+    border-radius: 20px;   
+    object-fit: cover;  */
+
+
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #555;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+/* Highlight the first paragraph for emphasis */
+p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f4ff;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    p {
+        font-size: 1.1rem;
+    }
+
+    .output_canvas {
+        width: 100%;
+        height: auto;
+    }
+}
