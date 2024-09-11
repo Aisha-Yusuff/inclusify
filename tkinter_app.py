@@ -9,7 +9,7 @@ from tkinter import *
 # import filedialog module
 from tkinter import filedialog
 
-from app.py import hand_gestures
+from app import hand_gestures
 
 #  Function for opening the file explorer window
 def browseFiles():

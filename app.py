@@ -8,7 +8,7 @@ mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
 
-def hand_gestures();
+def hand_gestures():
    while True:
       success, img = cap.read()
       img = cv2.flip(img, 1)
@@ -30,6 +30,10 @@ def hand_gestures();
       cv2.imshow('Hand Tracker', img)
       if cv2.waitKey(5) & 0xff == 27:
          break
+      key = cv2.waitKey(1)
+      if key == ord('q'): # press q to quit
+        cv2.destroyAllWindows()
+        break
 
 # DragDrop
 # rightclick
@@ -39,3 +43,4 @@ def hand_gestures();
 # scroll down
 # Zoom in 
 # Zoom out
+hand_gestures()
